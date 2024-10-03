@@ -25,7 +25,11 @@ html, body {
 }
 
 .navbar-container {
-    padding: 18px 20px;
+    padding: 20px 40px;
+}
+
+.logo-desktop {
+    width: 100px;
 }
 
 .container-desktop .navbar-wrapper {
@@ -40,10 +44,6 @@ html, body {
 
 .container-mobile {
     display: none;
-}
-
-.logo-desktop {
-    width: 100px;
 }
 
 .unstylized-list {
@@ -114,17 +114,28 @@ html, body {
 
 
 
+@media screen and (min-width: 1920px) {
+    .logo-desktop {
+        width: 162px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .navbar-container {
+        padding: 18px 20px;
+        position: relative;
+    }
+}
 
 
 
 
 
 @media screen and (max-width: 991px) {
-    .navbar-container {
-        padding: 18px 20px;
-        position: relative;
-    }
-
     .container-desktop {
         display: none;
     }
