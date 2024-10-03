@@ -115,6 +115,80 @@ a {
 
 
 
+/**************************************************** HEADINGS ****************************************************/
+.headings {
+    text-align: center;
+    background-color: var(--green);
+    position: relative;
+    padding-top: 9vh;
+}
+
+.hero-white {
+    color: var(--off-white);
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-weight: 900;
+    line-height: 0.9em;
+    font-size: 10vw;
+}
+
+.hero-green {
+    color: var(--neon-100);
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    font-weight: 900;
+    line-height: 0.8em;
+    font-size: 10vw;
+    padding-bottom: 10px;
+}
+
+.heading-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 38vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -5vh;
+}
+
+.heading-two p {
+    color: var(--off-white);
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.btn-heading {
+    padding: 15px 25px;
+}
+
+.heading-img {
+    display: none
+}
+
+.img-desktop-heading {
+    width: 100vw;
+    margin-top: -90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1920px) {
     .logo-desktop {
@@ -132,8 +206,6 @@ a {
         position: relative;
     }
 }
-
-
 
 
 
@@ -197,13 +269,13 @@ a {
         position: absolute;
         list-style: none;
         /* opacity: 0; */
-        top: 100%;
         left: 0;
         background-color: var(--green);
         width: 100%;
         transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
         max-height: 0px;
         overflow: hidden;
+        z-index: 999;
     }
 
     .nav-links li {
@@ -238,8 +310,8 @@ a {
     .headings {
         text-align: center;
         background-color: var(--green);
-        padding-top: 5vh;
         position: relative;
+        padding-top: 9vh;
     }
 
     .hero-white {
@@ -268,6 +340,9 @@ a {
         max-width: 65vw;
         margin: 0 auto;
         margin-top: 20px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -5vh;
     }
 
     .heading-two p {
@@ -281,14 +356,23 @@ a {
         padding: 15px 25px;
     }
 
+    .img-desktop-heading {
+        display: none;
+    }
+
     .heading-img {
+        display: block;
         overflow: hidden;
         width: 100%;
         height: 340px;
+        position: relative;
+        z-index: 1;
     }
 
     .img-mobile-heading {
         width: 100vw;
-        transform: scale(1.4);
+        transform: scale(1.62);
     }
+
+
 }
