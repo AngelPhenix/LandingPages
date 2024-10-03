@@ -11,6 +11,10 @@ html, body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --green: #122315;
     --neon-100: #55DD4A;
@@ -112,8 +116,6 @@ html, body {
 
 
 
-
-
 @media screen and (min-width: 1920px) {
     .logo-desktop {
         width: 162px;
@@ -136,6 +138,19 @@ html, body {
 
 
 @media screen and (max-width: 991px) {
+    /*
+
+
+
+
+
+    /*                                      NAVBAR
+
+
+
+
+
+    */
     .container-desktop {
         display: none;
     }
@@ -205,5 +220,75 @@ html, body {
     .nav-active {
         /* opacity: 1; */
         max-height: 300px;
+    }
+
+    /*
+
+
+
+
+
+    /*                                      HERO HEADINGS
+
+
+
+
+    
+    */
+    .headings {
+        text-align: center;
+        background-color: var(--green);
+        padding-top: 5vh;
+        position: relative;
+    }
+
+    .hero-white {
+        color: var(--off-white);
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        font-weight: 900;
+        line-height: 0.9em;
+        font-size: 13vw;
+    }
+
+    .hero-green {
+        color: var(--neon-100);
+        text-transform: uppercase;
+        letter-spacing: -3px;
+        font-weight: 900;
+        line-height: 0.8em;
+        font-size: 13vw;
+        padding-bottom: 10px;
+    }
+
+    .heading-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 65vw;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .heading-two p {
+        color: var(--off-white);
+        text-align: center;
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+
+    .btn-heading {
+        padding: 15px 25px;
+    }
+
+    .heading-img {
+        overflow: hidden;
+        width: 100%;
+        height: 340px;
+    }
+
+    .img-mobile-heading {
+        width: 100vw;
+        transform: scale(1.4);
     }
 }
