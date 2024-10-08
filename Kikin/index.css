@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
     padding: 0;
@@ -365,4 +366,48 @@ a {
     }
 
 
+
+
+
+
+    .stickers {
+        background-color: var(--off-white);
+        padding: 150px 0px;
+    }
+    
+    .stickers-heading {
+        max-width: 60vw;
+        margin: 0 auto;
+    }
+    
+    .heading-h2 {
+        color: var(--green);
+        text-align: center;
+        font-size: 7vw;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -2.5px;
+        line-height: 0.8em;
+    }
+    
+    .sticker-heading-two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 65vw;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        z-index: 2;
+        margin-bottom: -5vh;
+    }
+
+    .sticker-heading-two p {
+        color: var(--green);
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
 }
