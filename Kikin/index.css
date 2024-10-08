@@ -181,6 +181,113 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+.stickers {
+    background-color: var(--off-white);
+    padding: 150px 0px;
+    position: relative;
+}
+
+.stickers-heading {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.heading-h2 {
+    color: var(--green);
+    text-align: center;
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -2.5px;
+    line-height: 0.8em;
+}
+
+.sticker-heading-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 65vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -5vh;
+}
+
+.sticker-heading-two p {
+    color: var(--green);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.sticker-logo {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+}
+
+.change_the_world {
+    top: 45px;
+}
+
+.make_business_do_good {
+    top: 20px;
+    right: 40px;
+}
+
+.borrow_wisely {
+    top: 200px;
+    right: 0;
+}
+
+.put_planet_first {
+    bottom: 50px;
+    left: 30px;
+}
+
+.work_together {
+    right: 50px;
+    bottom: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1920px) {
     .logo-desktop {
         width: 162px;
@@ -373,6 +480,7 @@ a {
     .stickers {
         background-color: var(--off-white);
         padding: 150px 0px;
+        position: relative;
     }
     
     .stickers-heading {
@@ -409,5 +517,35 @@ a {
         margin-top: 10px;
         margin-bottom: 24px;
         font-weight: 400;
+    }
+    
+    .sticker-logo {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+    }
+
+    .change_the_world {
+        top: 45px;
+    }
+
+    .make_business_do_good {
+        top: 20px;
+        right: 40px;
+    }
+
+    .borrow_wisely {
+        top: 200px;
+        right: 0;
+    }
+
+    .put_planet_first {
+        bottom: 50px;
+        left: 30px;
+    }
+
+    .work_together {
+        right: 50px;
+        bottom: 65px;
     }
 }
