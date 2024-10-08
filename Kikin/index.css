@@ -120,6 +120,7 @@ a {
     background-color: var(--green);
     position: relative;
     padding-top: 9vh;
+    z-index: 1;
 }
 
 .hero-white {
@@ -193,12 +194,12 @@ a {
 
 .stickers {
     background-color: var(--off-white);
-    padding: 150px 0px;
+    padding: 240px 0px;
     position: relative;
 }
 
 .stickers-heading {
-    max-width: 60vw;
+    max-width: 62vw;
     margin: 0 auto;
 }
 
@@ -217,7 +218,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 65vw;
+    max-width: 39vw;
     margin: 0 auto;
     margin-top: 20px;
     position: relative;
@@ -230,37 +231,39 @@ a {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 24px;
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .sticker-logo {
     position: absolute;
-    width: 140px;
-    height: 140px;
+    overflow: hidden;
+    width: 168px;
+    height: 168px;
 }
 
 .change_the_world {
-    top: 45px;
+    top: 220px;
 }
 
 .make_business_do_good {
-    top: 20px;
-    right: 40px;
+    top: 30px;
+    right: 60px;
 }
 
 .borrow_wisely {
-    top: 200px;
-    right: 0;
+    top: 380px;
+    right: -15px;
 }
 
 .put_planet_first {
-    bottom: 50px;
-    left: 30px;
+    bottom: 45px;
+    left: 230px;
 }
 
 .work_together {
-    right: 50px;
-    bottom: 65px;
+    bottom: 45px;
+    right: 230px;
 }
 
 
@@ -292,16 +295,54 @@ a {
     .logo-desktop {
         width: 162px;
     }
+
+    .sticker-heading-two p {
+        font-size: 22px;
+    }
+
+    .sticker-logo {
+        width: 260px;
+        height: 260px;
+    }
 }
 
 
 
 
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .navbar-container {
         padding: 20px 40px;
         position: relative;
+    }
+
+    .sticker-logo {
+        width: 168px;
+        height: 168px;
+    }
+
+    .change_the_world {
+        top: 70px;
+    }
+    
+    .make_business_do_good {
+        top: -20px;
+        right: 30px;
+    }
+    
+    .borrow_wisely {
+        top: 215px;
+        right: -35px;
+    }
+    
+    .put_planet_first {
+        bottom: 45px;
+        left: 130px;
+    }
+    
+    .work_together {
+        right: 80px;
+        bottom: 20px;
     }
 }
 
