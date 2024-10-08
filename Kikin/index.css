@@ -39,6 +39,10 @@ a {
 /****** START: NAVBAR ******/
 .navbar {
     background-color: var(--green);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar-container {
@@ -179,6 +183,10 @@ a {
     text-transform: uppercase;
 }
 
+.nav-links li:first-child {
+    padding-top: 20px;
+}
+
 .nav-links li:last-child {
     padding-bottom: 30px;
 }
@@ -195,7 +203,7 @@ a {
     text-align: center;
     background-color: var(--green);
     position: relative;
-    padding-top: 5vh;
+    padding-top: 15vh;
     z-index: 1;
     overflow: hidden;
 }
@@ -351,8 +359,12 @@ a {
 
 
 
-
+/* DISPLAY EN DESSOUS DE 480PX (MOBILE) */
 @media screen and (max-width: 480px) {
+    .headings {
+        padding-top: 10vh;
+    }
+
     .hero-green, .hero-white {
         font-size: 16vw;
     }
