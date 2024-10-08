@@ -250,7 +250,6 @@ a {
     display: block;
     overflow: hidden;
     width: 100%;
-    height: 340px;
     position: relative;
     z-index: 1;
 }
@@ -353,7 +352,57 @@ a {
 
 
 
+@media screen and (max-width: 480px) {
+    .hero-green, .hero-white {
+        font-size: 16vw;
+    }
 
+    .heading-two {
+        max-width: 91vw;
+    }
+
+    .stickers-heading {
+        max-width: 90vw;
+    }
+
+    .sticker-heading-two {
+        max-width: 85vw;
+    }
+
+    .heading-h2 {
+        font-size: 13vw;
+    }
+
+    .sticker-logo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .change_the_world {
+        top: 40px;
+        left: -50px;
+    }
+
+    .make_business_do_good {
+        top: 60px;
+        right: -40px;
+    }
+
+    .put_planet_first {
+        bottom: 35px;
+        left: 10px;
+    }
+
+    .borrow_wisely {
+        top: 500px;
+        right: -50px;
+    }
+
+    .work_together {
+        right: 85px;
+        bottom: -10px;
+    }
+}
 
 
 
