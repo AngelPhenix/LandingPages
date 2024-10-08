@@ -30,3 +30,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animateElements();
 });
+
+document.addEventListener('scroll', function() {
+    const stickerBlock = document.querySelector('.stickers');
+    const logos = document.querySelectorAll('.sticker-logo');
+    const blockPosition = stickerBlock.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    logos.forEach((logo, index) => {
+        const logoPosition = logo.getBoundingClientRect().top; // Position Y de chaque logo par rapport au viewport
+        
+        // Définir des seuils spécifiques pour chaque logo
+        const triggerHeight = blockPosition * 0.1 + index; // Début de la transition d'opacité pour chaque logo
+        const maxHeight = triggerHeight + 200; // Fin de la transition d'opacité
+
+        // Calculer l'opacité en fonction du défilement par rapport à la position de chaque logo
+        let opacity = Math.min(1, Math.max(0, (windowHeight - logoPosition - triggerHeight) / (maxHeight - triggerHeight)));
+
+        // Appliquer l'animation GSAP pour chaque logo avec une transition d'opacité
+        gsap.to(logo, { opacity: opacity, duration: 0.2, ease: 'none' });
+    });
+});
