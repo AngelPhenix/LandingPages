@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+/* DESIGN ENTRE 990PX ET 1440PX, J'AI FUCKED UP */
 * {
     padding: 0;
     margin: 0;
@@ -194,7 +195,7 @@ a {
 
 .stickers {
     background-color: var(--off-white);
-    padding: 240px 0px;
+    padding: 150px 0px;
     position: relative;
 }
 
@@ -291,64 +292,8 @@ a {
 
 
 
-@media screen and (min-width: 1920px) {
-    .logo-desktop {
-        width: 162px;
-    }
-
-    .sticker-heading-two p {
-        font-size: 22px;
-    }
-
-    .sticker-logo {
-        width: 260px;
-        height: 260px;
-    }
-}
-
-
-
-
-
-@media screen and (max-width: 1440px) {
-    .navbar-container {
-        padding: 20px 40px;
-        position: relative;
-    }
-
-    .sticker-logo {
-        width: 168px;
-        height: 168px;
-    }
-
-    .change_the_world {
-        top: 70px;
-    }
-    
-    .make_business_do_good {
-        top: -20px;
-        right: 30px;
-    }
-    
-    .borrow_wisely {
-        top: 215px;
-        right: -35px;
-    }
-    
-    .put_planet_first {
-        bottom: 45px;
-        left: 130px;
-    }
-    
-    .work_together {
-        right: 80px;
-        bottom: 20px;
-    }
-}
-
-
-
-@media screen and (max-width: 991px) {
+/* BELOW 990PX */
+@media screen and (max-width: 990px) {
     /*
 
 
@@ -577,7 +522,7 @@ a {
 
     .borrow_wisely {
         top: 200px;
-        right: 0;
+        right: -10px;
     }
 
     .put_planet_first {
@@ -588,5 +533,61 @@ a {
     .work_together {
         right: 50px;
         bottom: 65px;
+    }
+}
+
+
+
+/* ENTRE 1440PX ET 1920PX WIDTH */
+@media screen and (min-width: 1440px) {
+    .navbar-container {
+        padding: 20px 40px;
+        position: relative;
+    }
+
+    .sticker-logo {
+        width: 168px;
+        height: 168px;
+    }
+
+    .change_the_world {
+        top: 70px;
+    }
+    
+    .make_business_do_good {
+        top: -20px;
+        right: 30px;
+    }
+    
+    .borrow_wisely {
+        top: 215px;
+        right: -35px;
+    }
+    
+    .put_planet_first {
+        bottom: 45px;
+        left: 130px;
+    }
+    
+    .work_together {
+        right: 80px;
+        bottom: 20px;
+    }
+}
+
+
+/* APRES 1920PX INCLUS */
+@media screen and (min-width: 1920px) {
+    .logo-desktop {
+        width: 162px;
+    }
+
+    .sticker-heading-two p {
+        font-size: 22px;
+    }
+
+    .sticker-logo {
+        width: 260px;
+        height: 260px;
     }
 }
