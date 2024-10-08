@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-/* DESIGN ENTRE 990PX ET 1440PX, J'AI FUCKED UP */
+/* 
+*  CSS PARTS :
+*  - NAVBAR
+*  - FIRST_SECTION
+*  - STICKER_SECTION
+*/
+
+
+/* DESIGN EN-DESSOUS DE 990PX */
+:root {
+    --green: #122315;
+    --neon-100: #55DD4A;
+    --neon-80: #77e46e;
+    --off-white: #f3ede4;
+    --stroke-30-light: #f3f0ec4d;
+    --hov-second-btn: #202f22;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,15 +34,9 @@ a {
     text-decoration: none;
 }
 
-:root {
-    --green: #122315;
-    --neon-100: #55DD4A;
-    --neon-80: #77e46e;
-    --off-white: #f3ede4;
-    --stroke-30-light: #f3f0ec4d;
-    --hov-second-btn: #202f22;
-}
 
+
+/****** START: NAVBAR ******/
 .navbar {
     background-color: var(--green);
 }
@@ -49,6 +60,10 @@ a {
 }
 
 .container-mobile {
+    display: block;
+}
+
+.container-desktop {
     display: none;
 }
 
@@ -111,16 +126,76 @@ a {
     background-color: var(--neon-80);
 }
 
-.nav-links {
-    display: none;
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/**************************************************** HEADINGS ****************************************************/
+.logo-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-mobile {
+    width: 92px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.logo-menu-button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon-100);
+    border-radius: 20px;
+}
+
+.logo-menu-button:hover {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    background-color: var(--green);
+    width: 100%;
+    transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.nav-links li {
+    font-size: 14px;
+    padding: 10px 0px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+.nav-links li:last-child {
+    padding-bottom: 30px;
+}
+
+.nav-active {
+    max-height: 300px;
+}
+/****** END: NAVBAR ******/
+
+
+
+/****** START: FIRST SECTION ******/
 .headings {
     text-align: center;
     background-color: var(--green);
     position: relative;
-    padding-top: 9vh;
+    padding-top: 5vh;
     z-index: 1;
     overflow: hidden;
 }
@@ -131,7 +206,7 @@ a {
     letter-spacing: -3px;
     font-weight: 900;
     line-height: 0.9em;
-    font-size: 10vw;
+    font-size: 13vw;
 }
 
 .hero-green {
@@ -140,7 +215,7 @@ a {
     letter-spacing: -3px;
     font-weight: 900;
     line-height: 0.8em;
-    font-size: 10vw;
+    font-size: 13vw;
     padding-bottom: 10px;
 }
 
@@ -148,7 +223,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 38vw;
+    max-width: 65vw;
     margin: 0 auto;
     margin-top: 20px;
     position: relative;
@@ -161,38 +236,40 @@ a {
     text-align: center;
     margin-bottom: 24px;
     font-weight: 400;
-    font-size: 22px;
 }
 
 .btn-heading {
     padding: 15px 25px;
 }
 
-.heading-img {
-    display: none
-}
-
 .img-desktop-heading {
-    width: 100vw;
-    margin-top: -90px;
+    display: none;
 }
 
+.heading-img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 340px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-mobile-heading {
+    width: 90vw;
+    transform: scale(1.60);
+    margin-top: -5px;
+}
+/****** END: FIRST_SECTION ******/
 
 
 
-
-
-
-
-
-
-
-
-
+/****** START: STICKER_SECTION ******/
 .stickers {
     background-color: var(--off-white);
     padding: 150px 0px;
     position: relative;
+    overflow: hidden;
 }
 
 .stickers-heading {
@@ -203,7 +280,7 @@ a {
 .heading-h2 {
     color: var(--green);
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     text-transform: uppercase;
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
@@ -215,7 +292,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 39vw;
+    max-width: 65vw;
     margin: 0 auto;
     margin-top: 20px;
     position: relative;
@@ -228,41 +305,40 @@ a {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 24px;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 400;
 }
 
 .sticker-logo {
     position: absolute;
-    overflow: hidden ;
-    width: 155px;
-    height: 155px;
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
 }
 
 .change_the_world {
-    top: 100px;
-    left: -10px;
+    top: 45px;
 }
 
 .make_business_do_good {
-    top: 30px;
-    right: 50px;
+    top: 20px;
+    right: 40px;
 }
 
 .borrow_wisely {
-    top: 250px;
+    top: 200px;
     right: -10px;
 }
 
 .put_planet_first {
-    bottom: 70px;
-    left: 110px;
+    bottom: 50px;
+    left: 30px;
 }
 
 .work_together {
-    bottom: 60px;
-    right: 130px;
+    right: 50px;
+    bottom: 65px;
 }
+/****** END: STICKER_SECTION ******/
 
 
 
@@ -282,255 +358,87 @@ a {
 
 
 
-
-
-
-
-
-
-
-/* BELOW 990PX */
-@media screen and (max-width: 990px) {
-    /*
-
-
-
-
-
-    /*                                      NAVBAR
-
-
-
-
-
-    */
-    .container-desktop {
+/* ENTRE 990PX ET 1440PX */
+@media screen and (min-width: 990px) {
+    .container-mobile {
         display: none;
     }
-
-    .container-mobile {
+    
+    .container-desktop {
         display: block;
-    }
-
-    .navbar-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .logo-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .logo-mobile {
-        width: 92px;
-        margin-left: 40px;
-        display: inline-block;
-    }
-
-    .logo-menu-button {
-        height: 40px;
-        width: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--neon-100);
-        border-radius: 20px;
-    }
-
-    .logo-menu-button:hover {
-        cursor: pointer;
-    }
+        margin: 0;
+    }    
 
     .nav-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        list-style: none;
-        /* opacity: 0; */
-        left: 0;
-        background-color: var(--green);
-        width: 100%;
-        transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-        max-height: 0px;
-        overflow: hidden;
-        z-index: 999;
+        display: none;
     }
-
-    .nav-links li {
-        font-size: 14px;
-        padding: 10px 0px;
-        letter-spacing: 0.25px;
-        text-transform: uppercase;
-    }
-
-    .nav-links li:last-child {
-        padding-bottom: 30px;
-    }
-
-    .nav-active {
-        /* opacity: 1; */
-        max-height: 300px;
-    }
-
-    /*
-
-
-
-
-
-    /*                                      HERO HEADINGS
-
-
-
-
     
-    */
-    .headings {
-        text-align: center;
-        background-color: var(--green);
-        position: relative;
-        padding-top: 9vh;
-        overflow: hidden;
+    .hero-white, .hero-green {
+        font-size: 10vw;
     }
-
-    .hero-white {
-        color: var(--off-white);
-        text-transform: uppercase;
-        letter-spacing: -3px;
-        font-weight: 900;
-        line-height: 0.9em;
-        font-size: 13vw;
-    }
-
-    .hero-green {
-        color: var(--neon-100);
-        text-transform: uppercase;
-        letter-spacing: -3px;
-        font-weight: 900;
-        line-height: 0.8em;
-        font-size: 13vw;
-        padding-bottom: 10px;
-    }
-
+    
     .heading-two {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 65vw;
-        margin: 0 auto;
-        margin-top: 20px;
-        position: relative;
-        z-index: 2;
-        margin-bottom: -5vh;
+        max-width: 38vw;
     }
-
+    
     .heading-two p {
-        color: var(--off-white);
-        text-align: center;
-        margin-bottom: 24px;
-        font-weight: 400;
-    }
-
-    .btn-heading {
-        padding: 15px 25px;
+        font-size: 16px;
     }
 
     .img-desktop-heading {
-        display: none;
-    }
-
-    .heading-img {
-        display: block;
-        overflow: hidden;
-        width: 100%;
-        height: 340px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .img-mobile-heading {
         width: 100vw;
-        transform: scale(1.62);
+        margin-top: -140px;
+        display: block;
     }
 
-
-
-
-
-
-    .stickers {
-        background-color: var(--off-white);
-        padding: 150px 0px;
-        position: relative;
-    }
-    
-    .stickers-heading {
-        max-width: 60vw;
-        margin: 0 auto;
+    .img-mobile-heading, .heading-img {
+        display: none;
     }
     
     .heading-h2 {
-        color: var(--green);
-        text-align: center;
-        font-size: 7vw;
-        text-transform: uppercase;
-        font-weight: 900;
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: -2.5px;
-        line-height: 0.8em;
+        font-size: 6vw;
     }
     
     .sticker-heading-two {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 65vw;
-        margin: 0 auto;
-        margin-top: 20px;
-        position: relative;
-        z-index: 2;
-        margin-bottom: -5vh;
+        max-width: 39vw;
     }
-
+    
     .sticker-heading-two p {
-        color: var(--green);
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 24px;
-        font-weight: 400;
+        font-weight: 500;
+        font-size: 16px;
     }
     
     .sticker-logo {
-        position: absolute;
-        width: 140px;
-        height: 140px;
+        width: 155px;
+        height: 155px;
     }
-
+    
     .change_the_world {
-        top: 45px;
+        top: 100px;
+        left: -10px;
     }
-
+    
     .make_business_do_good {
-        top: 20px;
-        right: 40px;
+        top: 30px;
+        right: 50px;
     }
-
+    
     .borrow_wisely {
-        top: 200px;
+        top: 250px;
         right: -10px;
     }
-
+    
     .put_planet_first {
-        bottom: 50px;
-        left: 30px;
+        bottom: 70px;
+        left: 110px;
     }
-
+    
     .work_together {
-        right: 50px;
-        bottom: 65px;
+        bottom: 60px;
+        right: 130px;
     }
 }
 
@@ -541,6 +449,10 @@ a {
     .navbar-container {
         padding: 20px 40px;
         position: relative;
+    }
+
+    .img-desktop-heading {
+        margin-top: -190px;
     }
 
     .stickers {
