@@ -318,8 +318,8 @@ a {
 .sticker-logo {
     position: absolute;
     overflow: hidden;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
 }
 
 .change_the_world {
@@ -349,6 +349,51 @@ a {
 
 
 
+/****** START: BENEFITS ******/
+.main-benefits {
+    padding: 0px 40px 120px;
+    background-color: var(--off-white);
+}
+
+.benefits-separator {
+    padding: 24px 0px;
+    border-bottom: 1px solid #1223157a;
+}
+
+.benefit-texts {
+    padding-bottom: 20px;
+}
+
+.benefits-pastille {
+    background-color: var(--neon-100);
+    width: 32px;
+    height: 32px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: 800;
+    line-height: 17px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.heading-h4 {
+    color: var(--green);
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1.5px;
+    line-height: 85%;
+    padding-bottom: 16px;
+}
+
+.benefit-img img {
+    width: 100%;
+}
+/****** END: BENEFITS ******/
 
 
 
@@ -413,6 +458,10 @@ a {
     .work_together {
         right: 85px;
         bottom: -10px;
+    }
+
+    .main-benefits {
+        padding: 0px 20px 60px;
     }
 }
 
@@ -501,6 +550,30 @@ a {
         bottom: 60px;
         right: 130px;
     }
+
+    .benefits-separator {
+        display: flex;
+    }
+
+    .benefit-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        padding-bottom: 0px;
+    }
+
+    .sub-benef {
+        width: 70%;
+    }
+
+    .heading-h4 {
+        font-size: 4vw;
+    }
+
+    .benefit-img {
+        width: 50%;
+    }
 }
 
 
@@ -552,6 +625,10 @@ a {
     .work_together {
         right: 185px;
         bottom: 140px;
+    }
+
+    .benefit-p {
+        font-size: 22px;
     }
 }
 
