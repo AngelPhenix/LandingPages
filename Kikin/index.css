@@ -9,7 +9,7 @@
 */
 
 
-/* DESIGN EN-DESSOUS DE 990PX */
+/* DESIGN ENTRE 768PX ET 990PX */
 :root {
     --green: #122315;
     --neon-100: #55DD4A;
@@ -500,6 +500,24 @@ a {
 
     .main-benefits {
         padding: 0px 20px 60px;
+    }
+}
+
+
+
+
+/* ENTRE 480PX ET 768PX */
+@media screen and (max-width: 768px) {
+    .wwa-img-block {
+        height: 500px;
+    }
+
+    .wwa-h2 {
+        font-size: 10vw;
+    }
+
+    .wwa-p-container {
+        width: 95%;
     }
 }
 
