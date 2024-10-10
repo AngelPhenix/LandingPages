@@ -304,7 +304,6 @@ a {
     margin-top: 20px;
     position: relative;
     z-index: 2;
-    margin-bottom: -5vh;
 }
 
 .sticker-heading-two p {
@@ -457,7 +456,7 @@ a {
 
     .work_together {
         right: 85px;
-        bottom: -10px;
+        bottom: 0px;
     }
 
     .main-benefits {
