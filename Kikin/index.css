@@ -17,6 +17,7 @@
     --off-white: #f3ede4;
     --stroke-30-light: #f3f0ec4d;
     --hov-second-btn: #202f22;
+    --turquoise-100: #73d3eb;
 }
 
 * {
@@ -332,7 +333,7 @@ a {
 
 .borrow_wisely {
     top: 200px;
-    right: -10px;
+    right: -25px;
 }
 
 .put_planet_first {
@@ -341,8 +342,8 @@ a {
 }
 
 .work_together {
-    right: 50px;
-    bottom: 65px;
+    right: 35px;
+    bottom: 80px;
 }
 /****** END: STICKER_SECTION ******/
 
@@ -396,8 +397,46 @@ a {
 
 
 
+/****** START: WHO WE ARE ******/
+.wwa-main-one {
+    padding: 40px;
+    background-color: var(--turquoise-100);
+}
 
+.wwa-img-block {
+    background-image: url(img/wwa_bg.webp);
+    height: 700px;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.wwa-h2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 24px 24px 0px 0px;
+}
+
+.wwa-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vw;
+    letter-spacing: -3px;
+    font-weight: 800;
+    line-height: 0.8em;
+    text-transform: uppercase;
+    color: var(--off-white);
+}
+
+.wwa-p-container {
+    padding: 0px 0px 24px 24px;
+    width: 75%;
+    color: var(--off-white);
+}
+/****** END: WHO WE ARE ******/
 
 
 
