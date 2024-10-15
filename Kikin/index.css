@@ -497,7 +497,7 @@ a {
     flex-flow: row;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    width: max-content;
     height: 55px;
     overflow: visible;
 }
@@ -559,6 +559,11 @@ a {
         text-transform: uppercase;
         line-height: 85%;
         color: var(--green);
+    }
+
+    .central {
+        border-left: 0px;
+        border-right: 0px;
     }
 }
 

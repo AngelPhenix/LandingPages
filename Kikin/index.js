@@ -51,3 +51,18 @@ document.addEventListener('scroll', function() {
         gsap.to(logo, { opacity: opacity, duration: 0, ease: 'none' });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselTrack = document.querySelector('.carousel');
+
+    gsap.to(carouselTrack, {
+        x: `-2927px`,
+        duration: 5,
+        ease: "linear",
+        repeat: -1,
+        roundProps: "x",
+        onRepeat: () => {
+            gsap.set(carouselTrack, { x: 0 }); // Reset position halfway
+        }
+    });
+});
