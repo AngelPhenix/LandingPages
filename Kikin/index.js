@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     gsap.to(carouselTrack, {
         x: `-2927px`,
-        duration: 5,
+        duration: 15,
         ease: "linear",
         repeat: -1,
         roundProps: "x",
